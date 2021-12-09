@@ -13,11 +13,9 @@ describe('DevFinance', () => {
         cy.get ('#description').type('Freela')
         cy.get ('#amount').type('12')
         cy.get ('#date').type('2021-11-09')
-
         cy.contains ('button', 'Salvar').click()
 
         cy.get('table tbody tr').should('have.length',1)
-
     });
 
 
